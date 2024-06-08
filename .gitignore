@@ -1,1 +1,3 @@
-/dataset
+/dataset/*.png
+/dataset/*.jpeg
+/dataset/*.jpg
