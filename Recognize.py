@@ -42,7 +42,7 @@ while True:
         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
         id, confidence = recognizer.predict(gray[y : y + h, x : x + w])
 
-        if confidence < confidence_threshold:
+        if confidence < confidence_threshold and id<=len(names)-1:
             id = names[id]
             confidence_percent = 100 - confidence
             label = f"{id} ({confidence_percent:.2f}%)"

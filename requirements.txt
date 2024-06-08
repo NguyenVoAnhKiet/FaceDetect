@@ -1,0 +1,6 @@
+keras
+tensorflow
+opencv-python
+pillow
+opencv-contrib-python
+# pip install -r requirements.txt   
